@@ -1,0 +1,17 @@
+{
+  "name": "Stride — Habit & Task Tracker",
+  "short_name": "Stride",
+  "description": "Personal habit tracker + shared task board with real-time sync",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0f",
+  "theme_color": "#4fd1c5",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
