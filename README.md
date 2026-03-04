@@ -2,7 +2,7 @@
 
 A personal habit tracker + shared task board with real-time sync, streaks, progress charts, and a calm dark-mode interface. Built as a Progressive Web App (PWA) with Firebase Firestore for two-user collaboration.
 
-![Stride App](icon-512.png)
+![Stride App](habit-tracker/icon-512.png)
 
 ---
 
