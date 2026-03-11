@@ -1,0 +1,754 @@
+* 
+/* ================= HOME PAGE ================= */
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make footer stay at bottom */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #f3e8ff);
+    color: #333;
+}
+
+/* Push footer to bottom */
+main {
+    flex: 1;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Projects Grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --primary-purple: #7b2cbf;
+    --dark-purple: #5a189a;
+    --light-purple: #f3e8ff;
+    --white: #ffffff;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #f3e8ff);
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: white;
+    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-purple);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-purple);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--dark-purple);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    padding: 40px;
+}
+
+/* Glass Card */
+.glass-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(123, 44, 191, 0.15);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Text */
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero-text span {
+    color: var(--primary-purple);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--dark-purple);
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Button */
+
+.btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--primary-purple);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background: var(--dark-purple);
+    transform: translateY(-3px);
+}
+
+.sci {
+    margin-left: 20px;
+}   
+
+.sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid var(--dark-purple);
+    border-radius: 50%;
+    font-size: 20px;
+    color: #7b2cbf;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: 0.5s ease;
+}
+
+.sci a:hover{
+    background: var(--dark-purple);
+    color: #ffffff;
+    transform: translateY(-3px);
+} 
+
+/* Image */
+.hero-image img {
+    width: 280px;
+    border-radius: 20px;
+    background: var(--primary-purple);
+    box-shadow: 0 15px 35px rgba(123, 44, 191, 0.3);
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-purple);
+    color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .glass-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image img {
+        width: 220px;
+    }
+}
+
+
+/* ================= ABOUT PAGE ================= */
+.about {
+    padding: 60px 10%;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-purple);
+    margin-bottom: 40px;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h2 {
+    color: var(--dark-purple);
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-card ul {
+    padding-left: 20px;
+}
+
+.about-card ul li {
+    margin-bottom: 8px;
+}
+
+/* Active nav link */
+nav a.active {
+    color: var(--primary-purple);
+    font-weight: bold;
+}
+
+
+/* ================= SKILLS PAGE ================= */
+
+.skills {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 2.5rem;
+    color: var(--primary-purple);
+    margin-bottom: 40px;
+}
+
+/* Flexbox Layout */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Skill Card */
+.skill-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation */
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(123, 44, 191, 0.25);
+}
+
+/* Skill Header */
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: var(--primary-purple);
+}
+
+/* Progress Bar */
+.progress-bar {
+    background: #e9ecef;
+    border-radius: 20px;
+    height: 12px;
+    overflow: hidden;
+}
+
+/* Progress Fill */
+.progress {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to right, var(--primary-purple), var(--dark-purple));
+    width: 0;
+    animation: load 2s forwards;
+}
+
+/* Individual Skill Levels */
+.progress.html {
+    width: 90%;
+}
+
+.progress.css {
+    width: 85%;
+}
+
+.progress.wordpress {
+    width: 75%;
+}
+
+.progress.visual-identity {
+    width: 80%;
+}
+
+/* Animation */
+@keyframes load {
+    from {
+        width: 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* ================= PROJECTS PAGE ================= */
+
+.projects-page {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.projects-page h1 {
+    font-size: 2.5rem;
+    color: var(--primary-purple);
+    margin-bottom: 50px;
+}
+
+/* CSS Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(123, 44, 191, 0.25);
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Content */
+.project-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-content h2 {
+    color: var(--dark-purple);
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.project-content .tech {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Active Navigation */
+nav a.active {
+    color: var(--primary-purple);
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-content {
+        text-align: center;
+    }
+}
+
+
+/* ================= ARTICLES PAGE ================= */
+
+.articles-page {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.articles-page h1 {
+    font-size: 2.5rem;
+    color: var(--primary-purple);
+    margin-bottom: 30px;
+}
+
+/* Categories */
+.categories {
+    margin-bottom: 40px;
+}
+
+.category {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: #f3e8ff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.category.active,
+.category:hover {
+    background: var(--primary-purple);
+    color: white;
+}
+
+/* Grid Layout */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+/* Article Card */
+.article-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(123, 44, 191, 0.25);
+}
+
+.article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.article-card:hover img {
+    transform: scale(1.05);
+}
+
+.article-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.badge {
+    background: var(--light-purple);
+    color: var(--dark-purple);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.article-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: var(--dark-purple);
+}
+
+.article-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: var(--primary-purple);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 40px;
+}
+
+.page {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: #f3e8ff;
+    text-decoration: none;
+    color: var(--dark-purple);
+    transition: 0.3s ease;
+}
+
+.page.active,
+.page:hover {
+    background: var(--primary-purple);
+    color: white;
+}
+
+
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-page {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.contact-page h1 {
+    font-size: 2.5rem;
+    color: var(--primary-purple);
+    margin-bottom: 50px;
+}
+
+/* Layout */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    color: var(--dark-purple);
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+}
+
+/* Form Groups */
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: #f3e8ff;
+    font-size: 0.95rem;
+}
+
+.form-group label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 0.9rem;
+    color: #555;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* Floating Label Effect */
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label {
+    top: -10px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 0.75rem;
+    color: var(--primary-purple);
+}
+
+/* Button */
+.contact-form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
