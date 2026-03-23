@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ffffff, #f3e8ff);
+    background: linear-gradient(135deg, #ffffff, #eaf7fd);
     color: #333;
 }
 
@@ -87,16 +87,16 @@ footer {
 
 /* Colors */
 :root {
-    --primary-purple: #7b2cbf;
-    --dark-purple: #5a189a;
-    --light-purple: #f3e8ff;
+    --primary-color: #3FBAEB;
+    --secondary-color: #18144A;
+    --light-color: #eaf7fd;
     --white: #ffffff;
 }
 
 /* Body */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ffffff, #f3e8ff);
+    background: linear-gradient(135deg, #ffffff, #eaf7fd);
     color: #333;
 }
 
@@ -107,13 +107,13 @@ header {
     align-items: center;
     padding: 20px 10%;
     background: white;
-    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.1);
+    box-shadow: 0 4px 15px rgba(63, 186, 235, 0.1);
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-purple);
+    color: var(--primary-color);
 }
 
 /* Navigation */
@@ -125,13 +125,13 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--primary-purple);
+    color: var(--primary-color);
     font-weight: 500;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: var(--dark-purple);
+    color: var(--secondary-color);
 }
 
 /* Hero Section */
@@ -152,7 +152,7 @@ nav a:hover {
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(15px);
-    box-shadow: 0 20px 40px rgba(123, 44, 191, 0.15);
+    box-shadow: 0 20px 40px rgba(63, 186, 235, 0.15);
     animation: fadeIn 1.2s ease-in-out;
 }
 
@@ -167,13 +167,13 @@ nav a:hover {
 }
 
 .hero-text span {
-    color: var(--primary-purple);
+    color: var(--primary-color);
 }
 
 .tagline {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: var(--dark-purple);
+    color: var(--secondary-color);
 }
 
 .hero-text p {
@@ -191,7 +191,7 @@ nav a:hover {
 .btn {
     display: inline-block;
     padding: 10px 30px;
-    background: var(--primary-purple);
+    background: var(--primary-color);
     color: white;
     text-decoration: none;
     border-radius: 40px;
@@ -200,7 +200,7 @@ nav a:hover {
 }
 
 .btn:hover {
-    background: var(--dark-purple);
+    background: var(--secondary-color);
     transform: translateY(-3px);
 }
 
@@ -211,17 +211,17 @@ nav a:hover {
 .sci a {
     display: inline-flex;
     padding: 8px;
-    border: 2px solid var(--dark-purple);
+    border: 2px solid var(--secondary-color);
     border-radius: 50%;
     font-size: 20px;
-    color: #7b2cbf;
+    color: #3FBAEB;
     text-decoration: none;
     margin: 0 8px;
     transition: 0.5s ease;
 }
 
 .sci a:hover{
-    background: var(--dark-purple);
+    background: var(--secondary-color);
     color: #ffffff;
     transform: translateY(-3px);
 } 
@@ -230,8 +230,8 @@ nav a:hover {
 .hero-image img {
     width: 280px;
     border-radius: 20px;
-    background: var(--primary-purple);
-    box-shadow: 0 15px 35px rgba(123, 44, 191, 0.3);
+    background: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(63, 186, 235, 0.3);
 }
 
 /* Footer */
@@ -239,7 +239,7 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: var(--primary-purple);
+    background: var(--primary-color);
     color: white;
 }
 
@@ -289,7 +289,7 @@ footer {
 .about h1 {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--primary-purple);
+    color: var(--primary-color);
     margin-bottom: 40px;
 }
 
@@ -299,7 +299,7 @@ footer {
     padding: 30px;
     border-radius: 20px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    box-shadow: 0 10px 25px rgba(63, 186, 235, 0.1);
     transition: 0.3s ease;
 }
 
@@ -308,7 +308,7 @@ footer {
 }
 
 .about-card h2 {
-    color: var(--dark-purple);
+    color: var(--secondary-color);
     margin-bottom: 15px;
 }
 
@@ -327,7 +327,7 @@ footer {
 
 /* Active nav link */
 nav a.active {
-    color: var(--primary-purple);
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -341,7 +341,7 @@ nav a.active {
 
 .skills h1 {
     font-size: 2.5rem;
-    color: var(--primary-purple);
+    color: var(--primary-color);
     margin-bottom: 40px;
 }
 
@@ -360,14 +360,14 @@ nav a.active {
     padding: 30px;
     width: 280px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    box-shadow: 0 10px 25px rgba(63, 186, 235, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover Animation */
 .skill-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(123, 44, 191, 0.25);
+    box-shadow: 0 15px 35px rgba(63, 186, 235, 0.25);
 }
 
 /* Skill Header */
@@ -381,7 +381,7 @@ nav a.active {
 
 .skill-icon {
     font-size: 2rem;
-    color: var(--primary-purple);
+    color: var(--primary-color);
 }
 
 /* Progress Bar */
@@ -396,7 +396,7 @@ nav a.active {
 .progress {
     height: 100%;
     border-radius: 20px;
-    background: linear-gradient(to right, var(--primary-purple), var(--dark-purple));
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     width: 0;
     animation: load 2s forwards;
 }
@@ -443,7 +443,7 @@ nav a.active {
 
 .projects-page h1 {
     font-size: 2.5rem;
-    color: var(--primary-purple);
+    color: var(--primary-color);
     margin-bottom: 50px;
 }
 
@@ -460,14 +460,14 @@ nav a.active {
     backdrop-filter: blur(12px);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    box-shadow: 0 10px 25px rgba(63, 186, 235, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover Animation */
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(123, 44, 191, 0.25);
+    box-shadow: 0 20px 40px rgba(63, 186, 235, 0.25);
 }
 
 /* Project Image */
@@ -484,7 +484,7 @@ nav a.active {
 }
 
 .project-content h2 {
-    color: var(--dark-purple);
+    color: var(--secondary-color);
     margin-bottom: 15px;
 }
 
@@ -501,7 +501,7 @@ nav a.active {
 
 /* Active Navigation */
 nav a.active {
-    color: var(--primary-purple);
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -522,7 +522,7 @@ nav a.active {
 
 .articles-page h1 {
     font-size: 2.5rem;
-    color: var(--primary-purple);
+    color: var(--primary-color);
     margin-bottom: 30px;
 }
 
@@ -536,14 +536,14 @@ nav a.active {
     margin: 5px 10px;
     padding: 8px 18px;
     border-radius: 20px;
-    background: #f3e8ff;
+    background: #eaf7fd;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
 .category.active,
 .category:hover {
-    background: var(--primary-purple);
+    background: var(--primary-color);
     color: white;
 }
 
@@ -560,13 +560,13 @@ nav a.active {
     backdrop-filter: blur(12px);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    box-shadow: 0 10px 25px rgba(63, 186, 235, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .article-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(123, 44, 191, 0.25);
+    box-shadow: 0 20px 40px rgba(63, 186, 235, 0.25);
 }
 
 .article-card img {
@@ -586,8 +586,8 @@ nav a.active {
 }
 
 .badge {
-    background: var(--light-purple);
-    color: var(--dark-purple);
+    background: var(--light-color);
+    color: var(--secondary-color);
     padding: 5px 12px;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -598,7 +598,7 @@ nav a.active {
 .article-content h2 {
     font-size: 1.2rem;
     margin-bottom: 12px;
-    color: var(--dark-purple);
+    color: var(--secondary-color);
 }
 
 .article-content p {
@@ -609,7 +609,7 @@ nav a.active {
 
 .read-more {
     text-decoration: none;
-    color: var(--primary-purple);
+    color: var(--primary-color);
     font-weight: bold;
     transition: 0.3s;
 }
@@ -628,15 +628,15 @@ nav a.active {
     margin: 5px;
     padding: 8px 14px;
     border-radius: 10px;
-    background: #f3e8ff;
+    background: #eaf7fd;
     text-decoration: none;
-    color: var(--dark-purple);
+    color: var(--secondary-color);
     transition: 0.3s ease;
 }
 
 .page.active,
 .page:hover {
-    background: var(--primary-purple);
+    background: var(--primary-color);
     color: white;
 }
 
@@ -651,7 +651,7 @@ nav a.active {
 
 .contact-page h1 {
     font-size: 2.5rem;
-    color: var(--primary-purple);
+    color: var(--primary-color);
     margin-bottom: 50px;
 }
 
@@ -675,7 +675,7 @@ nav a.active {
     padding: 25px;
     border-radius: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    box-shadow: 0 10px 25px rgba(63, 186, 235, 0.1);
     transition: 0.3s ease;
 }
 
@@ -684,7 +684,7 @@ nav a.active {
 }
 
 .info-card h3 {
-    color: var(--dark-purple);
+    color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
@@ -696,7 +696,7 @@ nav a.active {
     backdrop-filter: blur(12px);
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.1);
+    box-shadow: 0 10px 25px rgba(63, 186, 235, 0.1);
 }
 
 /* Form Groups */
@@ -712,7 +712,7 @@ nav a.active {
     border: none;
     border-radius: 10px;
     outline: none;
-    background: #f3e8ff;
+    background: #eaf7fd;
     font-size: 0.95rem;
 }
 
@@ -736,7 +736,7 @@ nav a.active {
     background: white;
     padding: 0 5px;
     font-size: 0.75rem;
-    color: var(--primary-purple);
+    color: var(--primary-color);
 }
 
 /* Button */
